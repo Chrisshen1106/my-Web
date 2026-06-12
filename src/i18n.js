@@ -133,6 +133,12 @@ export const messages = {
       title: 'Awards & Honors',
       items: [
         {
+          date: 'May 2025',
+          title: 'NVIDIA Deep Learning Workshop',
+          achievement: 'Deep Learning Theory and Practice Certificate',
+          organization: 'Passed a computer vision image recognition assessment after completing the course.',
+        },
+        {
           date: 'Apr 2024',
           title: 'TOEIC Listening and Reading',
           achievement: '870 Golden Certificate',
@@ -511,6 +517,12 @@ export const messages = {
       eyebrow: '成果紀錄',
       title: '獲獎與證照',
       items: [
+        {
+          date: '2025.05',
+          title: 'NVIDIA 深度學習工作坊',
+          achievement: '深度學習理論與實作證照',
+          organization: '完成課程之後，通過電腦視覺影像辨識測驗。',
+        },
         {
           date: '2024.04',
           title: 'TOEIC Listening and Reading',
