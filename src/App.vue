@@ -377,6 +377,13 @@ watch(
         </button>
       </div>
     </header>
+    <button
+      v-if="menuOpen"
+      class="menu-backdrop"
+      type="button"
+      :aria-label="t('actions.closeMenu')"
+      @click="closeMenu"
+    ></button>
 
     <section class="top-photo-marquee" aria-label="Portfolio photo records">
       <div class="photo-track">
