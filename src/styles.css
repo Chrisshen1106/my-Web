@@ -809,8 +809,8 @@ main {
   display: inline-flex;
   gap: 0.85rem;
   min-width: max-content;
-  -webkit-animation: photoMarquee 52s linear infinite;
-  animation: photoMarquee 52s linear infinite;
+  -webkit-animation: photoMarquee 66s linear infinite;
+  animation: photoMarquee 66s linear infinite;
   -webkit-transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   transform: translate3d(0, 0, 0);
@@ -847,8 +847,8 @@ main {
   }
 
   to {
-    -webkit-transform: translate3d(calc(-2850px - 12.75rem), 0, 0);
-    transform: translate3d(calc(-2850px - 12.75rem), 0, 0);
+    -webkit-transform: translate3d(calc(-3610px - 16.15rem), 0, 0);
+    transform: translate3d(calc(-3610px - 16.15rem), 0, 0);
   }
 }
 
@@ -859,8 +859,8 @@ main {
   }
 
   to {
-    -webkit-transform: translate3d(calc(-2850px - 12.75rem), 0, 0);
-    transform: translate3d(calc(-2850px - 12.75rem), 0, 0);
+    -webkit-transform: translate3d(calc(-3610px - 16.15rem), 0, 0);
+    transform: translate3d(calc(-3610px - 16.15rem), 0, 0);
   }
 }
 

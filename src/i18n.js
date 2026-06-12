@@ -169,6 +169,22 @@ export const messages = {
       title: 'Projects',
       items: [
         {
+          year: '2026',
+          title: 'Intelligent Invoice Management & Reconciliation System',
+          context: 'Software Development Method',
+          description:
+            'Developed an intelligent scanning system to help companies build three-way reconciliation across purchase orders, receiving documents, and invoices. The system makes document uploads easier for general employees while helping accounting staff and managers manage documents and historical records more effectively.',
+          tags: ['OCR', 'Database Management', 'Frontend Development', 'Backend API Design'],
+        },
+        {
+          year: '2026',
+          title: 'Asset Management System',
+          context: 'Cloud Native Development',
+          description:
+            'Developed an internal asset management system for TSMC. Through user stories for general users and asset management staff, the project identified pain points and improved modules including asset management, maintenance request workflows, and new asset creation.',
+          tags: ['Concurrency Control', 'System Architecture', 'Deployment', 'Frontend & Backend', 'Database Management'],
+        },
+        {
           year: '2025',
           title: 'Talent-Job Matching Prediction',
           context: 'Statistical Learning & Deep Learning',
@@ -332,6 +348,10 @@ export const messages = {
       eyebrow: 'Evidence',
       title: 'Photo Records',
       items: {
+        softwareSystem: { title: 'Invoice Reconciliation System', description: 'Software development project interface' },
+        softwareArchitecture: { title: 'Invoice System Architecture', description: 'Software development system architecture' },
+        cloudArchitecture: { title: 'Cloud Native System Architecture', description: 'Cloud native project architecture' },
+        cloudRecord: { title: 'Asset Management System Record', description: 'Cloud native project record' },
         lab: { title: 'BAEIR Lab Gathering', description: 'Research and team collaboration' },
         workshop: { title: 'SofinX Finance Workshop', description: 'Finance and analytics practice' },
         game: { title: 'Game Design Project', description: 'Unity development and final demo' },
@@ -528,6 +548,22 @@ export const messages = {
       title: '專題紀錄',
       items: [
         {
+          year: '2026',
+          title: '智慧發票對帳系統',
+          context: '軟體開發方法',
+          description:
+            '開發一套智慧掃描系統，協助公司建立三方對帳單（採購單、驗收單、發票），讓公司內部一般員工上傳單據更加方便，同時會計相關員工與主管也更好管理單據與歷史紀錄。',
+          tags: ['OCR 字元掃描', '資料庫管理', '前端開發', '後端 API 設計'],
+        },
+        {
+          year: '2026',
+          title: '資產管理系統',
+          context: '雲原生應用程式開發',
+          description:
+            '開發一套台積電內部資產管理系統，透過 User Story（一般使用者、資產管理人員）理解使用者痛點後，針對資產管理、維修單流程、新增資產等模組進行系統改良與開發。',
+          tags: ['併發控制', '系統架構', '部署', '前後端', '資料庫管理'],
+        },
+        {
           year: '2025',
           title: '人才與職缺媒合預測',
           context: '統計學習與深度學習',
@@ -687,6 +723,10 @@ export const messages = {
       eyebrow: '作品與證明',
       title: '照片紀錄',
       items: {
+        softwareSystem: { title: '智慧發票對帳系統', description: '軟體開發方法專題介面' },
+        softwareArchitecture: { title: '發票對帳系統架構', description: '軟體開發方法系統架構' },
+        cloudArchitecture: { title: '雲原生系統架構', description: '雲原生專題系統架構' },
+        cloudRecord: { title: '資產管理系統紀錄', description: '雲原生專題成果紀錄' },
         lab: { title: 'BAEIR Lab 聚餐', description: '研究團隊與合作紀錄' },
         workshop: { title: 'SofinX 金融工作坊', description: '金融與分析實作' },
         game: { title: '遊戲設計期末專題', description: 'Unity 開發與成果展示' },

@@ -26,6 +26,22 @@ let activeSectionHandler = null;
 const profilePhoto = new URL('../S__59359236_0.jpg', import.meta.url).href;
 const galleryImages = [
   {
+    key: 'softwareSystem',
+    src: new URL('../Photo/軟體開發系統.png', import.meta.url).href,
+  },
+  {
+    key: 'softwareArchitecture',
+    src: new URL('../Photo/軟體開發系統架構.png', import.meta.url).href,
+  },
+  {
+    key: 'cloudArchitecture',
+    src: new URL('../Photo/雲原生系統架構.png', import.meta.url).href,
+  },
+  {
+    key: 'cloudRecord',
+    src: new URL('../Photo/雲原生系統紀錄.png', import.meta.url).href,
+  },
+  {
     key: 'lab',
     src: new URL('../Photo/LAB聚餐.jpg', import.meta.url).href,
   },
