@@ -113,8 +113,8 @@ const marqueeImages = Array.from({ length: 3 }, (_, copyIndex) =>
 const navItems = [
   { key: 'profile', href: '#profile' },
   { key: 'education', href: '#education' },
-  { key: 'courses', href: '#courses' },
   { key: 'experience', href: '#experience' },
+  { key: 'courses', href: '#courses' },
   { key: 'projects', href: '#projects' },
   { key: 'awards', href: '#awards' },
   { key: 'activities', href: '#activities' },
@@ -472,6 +472,35 @@ watch(
         </div>
       </section>
 
+      <section id="experience" class="content-section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">{{ t('experience.eyebrow') }}</p>
+          <h2>{{ t('experience.title') }}</h2>
+        </div>
+
+        <div class="timeline">
+          <article
+            v-for="item in experienceItems"
+            :key="`${item.date}-${item.title}`"
+            class="timeline-item"
+          >
+            <time>{{ item.date }}</time>
+            <div>
+              <h3>
+                <template v-if="item.titleRole">
+                  <span>{{ item.titleRole }}</span>
+                  <span class="title-affiliation">｜{{ item.titleAffiliation }}</span>
+                </template>
+                <template v-else>{{ item.title }}</template>
+              </h3>
+              <p v-if="item.organization" class="organization">{{ item.organization }}</p>
+              <p>{{ item.description }}</p>
+              <p class="meta-line"><strong>{{ t('labels.focus') }}</strong> {{ formatTags(item.tags) }}</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section id="courses" class="content-section reveal">
         <div class="section-heading">
           <p class="eyebrow">{{ t('courses.eyebrow') }}</p>
@@ -510,35 +539,6 @@ watch(
           <article v-for="group in skillGroups" :key="group.name" class="skill-entry">
             <h3>{{ group.name }}</h3>
             <p class="skill-description">{{ group.description }}</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="experience" class="content-section reveal">
-        <div class="section-heading">
-          <p class="eyebrow">{{ t('experience.eyebrow') }}</p>
-          <h2>{{ t('experience.title') }}</h2>
-        </div>
-
-        <div class="timeline">
-          <article
-            v-for="item in experienceItems"
-            :key="`${item.date}-${item.title}`"
-            class="timeline-item"
-          >
-            <time>{{ item.date }}</time>
-            <div>
-              <h3>
-                <template v-if="item.titleRole">
-                  <span>{{ item.titleRole }}</span>
-                  <span class="title-affiliation">｜{{ item.titleAffiliation }}</span>
-                </template>
-                <template v-else>{{ item.title }}</template>
-              </h3>
-              <p v-if="item.organization" class="organization">{{ item.organization }}</p>
-              <p>{{ item.description }}</p>
-              <p class="meta-line"><strong>{{ t('labels.focus') }}</strong> {{ formatTags(item.tags) }}</p>
-            </div>
           </article>
         </div>
       </section>

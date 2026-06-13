@@ -54,7 +54,6 @@ export const messages = {
           details: [
             { label: 'Major', value: 'Economics' },
             { label: 'Minor', value: 'Industrial & Information Management' },
-            { label: 'Class Ranking', value: '17 / 72' },
             { label: 'GPA', value: '3.98' },
           ],
         },
@@ -402,7 +401,7 @@ export const messages = {
       closeCard: '關閉資訊卡',
     },
     labels: {
-      focus: '重點：',
+      focus: '技能：',
       methods: '方法：',
       copied: '已複製',
     },
@@ -412,7 +411,7 @@ export const messages = {
       alias: 'Chris Shen',
       basicInfo: [
         { label: '姓名', value: 'Jui-Ping Shen 沈芮平' },
-        { label: '性別', value: 'Male' },
+        { label: '性別', value: '男性' },
         { label: '電話', value: '(+886) 909-630-038' },
         { label: 'Email', value: 'chrisshen1106@gmail.com', kind: 'email' },
         { label: '語言', value: '中文、英文' },
@@ -437,9 +436,8 @@ export const messages = {
           institution: '國立成功大學',
           abbreviation: 'NCKU',
           details: [
-            { label: '主修', value: '經濟系' },
+            { label: '主修', value: '經濟學系' },
             { label: '輔系', value: '工業與資訊管理學系' },
-            { label: '班排', value: '17 / 72' },
             { label: 'GPA', value: '3.98' },
           ],
         },
