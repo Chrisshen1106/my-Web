@@ -22,6 +22,7 @@ let revealObserver;
 let revealVisibleHandler = () => {};
 let activeSectionFrame = null;
 let activeSectionHandler = null;
+let activeSectionLockTimer = null;
 
 const profilePhoto = new URL('../S__59359236_0.jpg', import.meta.url).href;
 const galleryImages = [
@@ -153,18 +154,26 @@ function setLocale(value) {
 function scrollToTop() {
   menuOpen.value = false;
   activeSection.value = 'profile';
+  lockActiveSection();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function handleNavClick(event, item) {
+  event.preventDefault();
+
   if (item.key === 'profile') {
-    event.preventDefault();
     scrollToTop();
     return;
   }
 
   activeSection.value = item.key;
+  lockActiveSection();
   closeMenu();
+
+  document.getElementById(item.key)?.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+  });
 }
 
 async function copyEmail() {
@@ -274,6 +283,7 @@ onBeforeUnmount(() => {
   stopActiveSectionTracking();
   document.body.classList.remove('modal-open');
   window.clearTimeout(copyTimer);
+  window.clearTimeout(activeSectionLockTimer);
 });
 
 function startActiveSectionTracking() {
@@ -297,12 +307,21 @@ function stopActiveSectionTracking() {
 }
 
 function requestActiveSectionUpdate() {
+  if (activeSectionLockTimer) return;
   if (activeSectionFrame) return;
 
   activeSectionFrame = requestAnimationFrame(() => {
     activeSectionFrame = null;
     updateActiveSection();
   });
+}
+
+function lockActiveSection() {
+  window.clearTimeout(activeSectionLockTimer);
+  activeSectionLockTimer = window.setTimeout(() => {
+    activeSectionLockTimer = null;
+    updateActiveSection();
+  }, 900);
 }
 
 function updateActiveSection() {
