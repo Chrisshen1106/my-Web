@@ -3,7 +3,7 @@ export const messages = {
     nav: {
       profile: 'Profile',
       education: 'Education',
-      experience: 'Experience',
+      experience: 'Work Experience',
       projects: 'Projects',
       awards: 'Awards',
       courses: 'Courses',
@@ -90,7 +90,7 @@ export const messages = {
     },
     experience: {
       eyebrow: 'Practical Experience',
-      title: 'Experience',
+      title: 'Work Experience',
       items: [
         {
           date: '2025.09 - 2026.02',

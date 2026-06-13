@@ -207,6 +207,14 @@ function formatGrade(grade) {
   return grade === 'A' ? 'A\u00a0' : grade;
 }
 
+function gradeClass(grade) {
+  return {
+    'grade-plus': grade === 'A+',
+    'grade-plain': grade === 'A',
+    'grade-minus': grade === 'A-',
+  };
+}
+
 function formatTags(tags) {
   return tags.join(locale.value === 'zh' ? '、' : ' · ');
 }
@@ -513,7 +521,7 @@ watch(
             <div class="course-list">
               <div v-for="course in technologyCourses" :key="course.name" class="course-row">
                 <span>{{ course.name }}</span>
-                <strong>{{ formatGrade(course.grade) }}</strong>
+                <strong :class="gradeClass(course.grade)">{{ formatGrade(course.grade) }}</strong>
               </div>
             </div>
           </article>
@@ -523,7 +531,7 @@ watch(
             <div class="course-list">
               <div v-for="course in analyticsCourses" :key="course.name" class="course-row">
                 <span>{{ course.name }}</span>
-                <strong>{{ formatGrade(course.grade) }}</strong>
+                <strong :class="gradeClass(course.grade)">{{ formatGrade(course.grade) }}</strong>
               </div>
             </div>
           </article>
