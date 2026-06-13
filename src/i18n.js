@@ -264,7 +264,7 @@ export const messages = {
         {
           year: '2023',
           title: 'Tea-Tec Intelligent System',
-          context: 'Information Management',
+          context: 'Introduction to Information Management',
           description:
             'Proposed an intelligent tea beverage POS and supply chain system integrating IoT concepts and RPA-based matching workflows.',
           tags: ['IoT', 'RPA', 'POS System', 'Supply Chain'],
@@ -644,7 +644,7 @@ export const messages = {
         {
           year: '2023',
           title: 'Tea-Tec 智慧系統',
-          context: '資訊管理',
+          context: '資訊管理導論',
           description:
             '提出智慧飲料 POS 與供應鏈整合系統，結合 IoT 概念與 RPA 自動媒合流程。',
           tags: ['IoT', 'RPA', 'POS System', 'Supply Chain'],
