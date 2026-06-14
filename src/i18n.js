@@ -22,7 +22,7 @@ export const messages = {
       copied: 'Copied',
     },
     hero: {
-      eyebrow: 'Business Analytics, Software Engineering, AI Systems, Information Technology',
+      eyebrow: 'Business Analytics, Software Engineering, AI Systems, Computer Vision, Information Technology',
       name: 'Jui-Ping Shen',
       alias: 'Chris Shen',
       basicInfo: [
@@ -406,7 +406,7 @@ export const messages = {
       copied: '已複製',
     },
     hero: {
-      eyebrow: '商業分析、軟體工程、AI系統、資訊技術',
+      eyebrow: '商業分析、軟體工程、AI系統、電腦視覺、資訊技術',
       name: '沈芮平',
       alias: 'Chris Shen',
       basicInfo: [
@@ -453,7 +453,7 @@ export const messages = {
             '以計量模型、統計檢定與資料視覺化整理商業與社會議題。擁有問題定義、變數選擇、資料清理、結果解釋之相關能力，以及清楚說明分析限制。',
         },
         {
-          name: 'AI 與系統',
+          name: 'AI 系統',
           items: ['機器學習', '深度學習', '推薦系統', '資訊檢索'],
           description:
             '能將機器學習、深度學習、資訊檢索與推薦系統方法，轉化成可測試的模型流程與應用原型。我會關注模型輸出如何被檢查、如何接到流程中，以及是否真的改善使用情境。',

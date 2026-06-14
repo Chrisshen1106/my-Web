@@ -499,6 +499,19 @@ watch(
         </div>
       </section>
 
+      <section class="content-section compact-section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">{{ t('skills.title') }}</p>
+          <h2>{{ t('skills.title') }}</h2>
+        </div>
+        <div class="skill-grid">
+          <article v-for="group in skillGroups" :key="group.name" class="skill-entry">
+            <h3>{{ group.name }}</h3>
+            <p class="skill-description">{{ group.description }}</p>
+          </article>
+        </div>
+      </section>
+
       <section id="experience" class="content-section reveal">
         <div class="section-heading">
           <p class="eyebrow">{{ t('experience.eyebrow') }}</p>
@@ -553,19 +566,6 @@ watch(
                 <strong :class="gradeClass(course.grade)">{{ formatGrade(course.grade) }}</strong>
               </div>
             </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="content-section compact-section reveal">
-        <div class="section-heading">
-          <p class="eyebrow">{{ t('skills.title') }}</p>
-          <h2>{{ t('skills.title') }}</h2>
-        </div>
-        <div class="skill-grid">
-          <article v-for="group in skillGroups" :key="group.name" class="skill-entry">
-            <h3>{{ group.name }}</h3>
-            <p class="skill-description">{{ group.description }}</p>
           </article>
         </div>
       </section>
