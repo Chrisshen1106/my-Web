@@ -278,6 +278,8 @@ export const messages = {
       analyticsTitle: 'Business Analytics Courses',
       gradeLabel: 'Grade',
       technology: [
+        { name: 'Cloud Native Development', grade: 'A+' },
+        { name: 'Software Project Management', grade: 'A+' },
         { name: 'Statistical Learning and Deep Learning', grade: 'A+' },
         { name: 'Game Design', grade: 'A+' },
         { name: 'Web Application Development', grade: 'A+' },
@@ -658,6 +660,8 @@ export const messages = {
       analyticsTitle: '商業分析相關課程',
       gradeLabel: '成績',
       technology: [
+        { name: '雲原生應用程式開發', grade: 'A+' },
+        { name: '軟體專案管理', grade: 'A+' },
         { name: '統計學習與深度學習', grade: 'A+' },
         { name: '遊戲設計', grade: 'A+' },
         { name: 'WebAPP 開發', grade: 'A+' },
