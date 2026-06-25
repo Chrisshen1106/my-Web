@@ -25,6 +25,10 @@ let activeSectionHandler = null;
 let activeSectionLockTimer = null;
 
 const profilePhoto = new URL('../S__59359236_0.jpg', import.meta.url).href;
+const resumePdf = new URL('../pdf/Jui-Ping,Shen_Resumé .pdf', import.meta.url).href;
+const workExperiencePdf = new URL('../pdf/沈芮平_工作經歷.pdf', import.meta.url).href;
+const projectPortfolioPdf = new URL('../pdf/沈芮平_專題經歷.pdf', import.meta.url).href;
+const awardActivitiesPdf = new URL('../pdf/沈芮平_獲獎經歷與課外表現.pdf', import.meta.url).href;
 const galleryImages = [
   {
     key: 'softwareSystem',
@@ -469,11 +473,102 @@ watch(
               <dd v-else>{{ item.value }}</dd>
             </div>
           </dl>
+
+          <div class="document-block">
+            <div class="document-heading">
+              <strong>Documents</strong>
+              <span>PDF files</span>
+            </div>
+            <div class="document-links" aria-label="Document links">
+              <a
+                class="resume-link"
+                :href="resumePdf"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open resume PDF in a new tab"
+              >
+                Resume
+                <ArrowUpRight aria-hidden="true" :size="15" />
+              </a>
+              <a
+                class="resume-link"
+                :href="workExperiencePdf"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open work experience PDF in a new tab"
+              >
+                Work experience
+                <ArrowUpRight aria-hidden="true" :size="15" />
+              </a>
+              <a
+                class="resume-link"
+                :href="projectPortfolioPdf"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open project portfolio PDF in a new tab"
+              >
+                Project portfolio
+                <ArrowUpRight aria-hidden="true" :size="15" />
+              </a>
+              <a
+                class="resume-link"
+                :href="awardActivitiesPdf"
+                target="_blank"
+                rel="noopener"
+                aria-label="Open award and extracurricular activities PDF in a new tab"
+              >
+                Award &amp; Extracurricular activities
+                <ArrowUpRight aria-hidden="true" :size="15" />
+              </a>
+            </div>
+          </div>
         </div>
 
         <figure class="portrait-panel">
           <img :src="profilePhoto" :alt="t('hero.portraitCaption')" />
           <figcaption>{{ t('hero.portraitCaption') }}</figcaption>
+          <div class="profile-links" aria-label="Social links">
+            <a
+              href="https://www.linkedin.com/in/芮平-沈-60a50725a/"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+            >
+              <svg class="social-icon" aria-hidden="true" viewBox="0 0 24 24">
+                <path
+                  d="M6.94 8.88H3.72v10.38h3.22V8.88ZM5.34 7.47c1.03 0 1.87-.84 1.87-1.87S6.37 3.73 5.34 3.73 3.47 4.57 3.47 5.6s.84 1.87 1.87 1.87Zm13.12 11.79h3.07v-5.7c0-3.06-1.63-4.48-3.81-4.48-1.76 0-2.55.97-2.99 1.65V8.88h-3.08v10.38h3.08v-5.79c0-1.55.29-3.05 2.22-3.05 1.9 0 1.93 1.78 1.93 3.15v5.69Z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/_pinggggg_1106/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+            >
+              <svg
+                class="social-icon instagram-icon"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+              >
+                <rect x="4" y="4" width="16" height="16" rx="4.5"></rect>
+                <circle cx="12" cy="12" r="3.4"></circle>
+                <circle cx="16.8" cy="7.2" r="1"></circle>
+              </svg>
+            </a>
+            <a
+              href="https://github.com/Chrisshen1106"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+            >
+              <svg class="social-icon" aria-hidden="true" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.5c-5.25 0-9.5 4.26-9.5 9.52 0 4.2 2.73 7.77 6.51 9.03.48.09.65-.21.65-.46v-1.8c-2.65.58-3.21-1.13-3.21-1.13-.43-1.1-1.06-1.39-1.06-1.39-.87-.6.07-.59.07-.59.96.07 1.47.99 1.47.99.85 1.46 2.24 1.04 2.79.79.09-.62.33-1.04.6-1.28-2.12-.24-4.35-1.06-4.35-4.72 0-1.04.37-1.9.98-2.57-.1-.24-.43-1.22.09-2.54 0 0 .81-.26 2.62.98.76-.21 1.57-.32 2.38-.32s1.62.11 2.38.32c1.81-1.24 2.61-.98 2.61-.98.52 1.32.19 2.3.09 2.54.61.67.98 1.53.98 2.57 0 3.67-2.24 4.48-4.36 4.72.34.3.64.88.64 1.77v2.64c0 .26.17.55.66.46A9.52 9.52 0 0 0 21.5 12.02c0-5.26-4.25-9.52-9.5-9.52Z"
+                ></path>
+              </svg>
+            </a>
+          </div>
         </figure>
       </section>
 
@@ -587,7 +682,7 @@ watch(
                 <div class="project-body">
                   <h3>{{ project.title }}</h3>
                   <p>{{ project.description }}</p>
-                  <p class="meta-line"><strong>{{ t('labels.methods') }}</strong> {{ project.tags.join(' · ') }}</p>
+                  <p class="meta-line"><strong>{{ t('labels.focus') }}</strong> {{ project.tags.join(' · ') }}</p>
                 </div>
               </article>
             </div>
