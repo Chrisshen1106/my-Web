@@ -25,7 +25,7 @@ let activeSectionHandler = null;
 let activeSectionLockTimer = null;
 
 const profilePhoto = new URL('../S__59359236_0.jpg', import.meta.url).href;
-const resumePdf = new URL('../pdf/Jui-Ping,Shen_Resumé .pdf', import.meta.url).href;
+const resumePdf = new URL('../pdf/Jui-Ping-Shen-Resume.pdf', import.meta.url).href;
 const workExperiencePdf = new URL('../pdf/沈芮平_工作經歷.pdf', import.meta.url).href;
 const projectPortfolioPdf = new URL('../pdf/沈芮平_專題經歷.pdf', import.meta.url).href;
 const awardActivitiesPdf = new URL('../pdf/沈芮平_獲獎經歷與課外表現.pdf', import.meta.url).href;
