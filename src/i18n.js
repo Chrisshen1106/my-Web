@@ -20,6 +20,7 @@ export const messages = {
       focus: 'Focus:',
       methods: 'Methods:',
       copied: 'Copied',
+      projectLink: 'Open project',
     },
     hero: {
       eyebrow: 'Business Analytics, Software Engineering, AI Systems, Computer Vision, Information Technology',
@@ -220,6 +221,8 @@ export const messages = {
           description:
             'Developed a Unity game with C# mechanics, gravity-based interaction, physics behavior, and complete player controls.',
           tags: ['Unity', 'C#', 'Game Mechanics'],
+          link: 'https://tofudoctorr.itch.io/gravitydrift',
+          linkLabel: 'Play on itch.io',
         },
         {
           year: '2025',
@@ -407,6 +410,7 @@ export const messages = {
       focus: '技能：',
       methods: '方法：',
       copied: '已複製',
+      projectLink: '開啟專題',
     },
     hero: {
       eyebrow: '商業分析、軟體工程、AI系統、電腦視覺、資訊技術',
@@ -606,6 +610,8 @@ export const messages = {
           context: '遊戲設計',
           description: '使用 Unity 與 C# 開發遊戲，完成重力互動、物理行為與玩家操作機制。',
           tags: ['Unity', 'C#', 'Game Mechanics'],
+          link: 'https://tofudoctorr.itch.io/gravitydrift',
+          linkLabel: '在 itch.io 遊玩',
         },
         {
           year: '2025',

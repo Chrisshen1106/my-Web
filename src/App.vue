@@ -4,6 +4,7 @@ import { useI18n } from 'vue-i18n';
 import {
   ArrowUpRight,
   Code2,
+  Gamepad2,
   Globe2,
   Mail,
   Menu,
@@ -680,7 +681,20 @@ watch(
                   <span>{{ project.context }}</span>
                 </div>
                 <div class="project-body">
-                  <h3>{{ project.title }}</h3>
+                  <div class="project-title-row">
+                    <h3>{{ project.title }}</h3>
+                    <a
+                      v-if="project.link"
+                      class="project-link"
+                      :href="project.link"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      <Gamepad2 aria-hidden="true" :size="11" />
+                      {{ project.linkLabel || t('labels.projectLink') }}
+                      <ArrowUpRight aria-hidden="true" :size="10" />
+                    </a>
+                  </div>
                   <p>{{ project.description }}</p>
                   <p class="meta-line"><strong>{{ t('labels.focus') }}</strong> {{ project.tags.join(' · ') }}</p>
                 </div>

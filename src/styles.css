@@ -848,7 +848,7 @@ main {
 
 .project-header {
   display: grid;
-  gap: 0.35rem;
+  gap: 0.24rem;
   margin: 0;
   font-size: 0.96rem;
 }
@@ -862,8 +862,52 @@ main {
   font-size: 1.08rem;
 }
 
+.project-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.48rem;
+  flex-wrap: wrap;
+}
+
 .project-entry p {
   margin: 0.55rem 0 0;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.17rem;
+  width: fit-content;
+  min-height: 1.38rem;
+  margin-top: 0;
+  border: 1px solid rgba(15, 118, 110, 0.24);
+  border-radius: 999px;
+  background: #f8fbf9;
+  color: var(--ink);
+  font-size: 0.62rem;
+  font-weight: 840;
+  line-height: 1.15;
+  padding: 0.16rem 0.34rem;
+  text-decoration: none;
+  transition:
+    border-color 160ms ease,
+    background-color 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.project-link:hover,
+.project-link:focus-visible {
+  border-color: rgba(15, 118, 110, 0.44);
+  background: var(--surface-soft);
+  color: var(--ink);
+  outline: none;
+  transform: translateY(-1px);
+}
+
+.project-link svg {
+  flex: 0 0 auto;
+  color: var(--teal);
 }
 
 .award-entry {
