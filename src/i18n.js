@@ -94,6 +94,28 @@ export const messages = {
       title: 'Work Experience',
       items: [
         {
+          date: '2026.07.08 - 2026.08.28',
+          title: 'Infrastructure Communication Service Division Summer Intern | Taiwan Semiconductor Manufacturing Company Limited (TSMC)',
+          titleRole: 'Infrastructure Communication Service Division Summer Intern',
+          titleAffiliation: 'Taiwan Semiconductor Manufacturing Company Limited (TSMC)',
+          description:
+            'Assisted in developing TSMC\'s internal Infrastructure Data-Centric Platform, enabling users to retrieve infrastructure records through an AI chatbot, including firewall information, EOS details, asset lifecycle data, and related infrastructure records. The role covered problem definition, SDD-based software development, Kubernetes deployment, NestJS backend services, n8n workflow automation, and CI/CD validation in a testing environment.',
+          detail:
+            'Assisted in developing TSMC\'s internal Infrastructure Data-Centric Platform, enabling users to retrieve infrastructure records through an AI chatbot, including firewall information, EOS details, asset lifecycle data, and related infrastructure records. The role covered problem definition, SDD-based software development, Kubernetes deployment, NestJS backend services, n8n workflow automation, and CI/CD validation in a testing environment.',
+          tags: [
+            'Problem Definition',
+            'SDD',
+            'Cloud Native',
+            'System Development',
+            'Cloud Deployment',
+            'Databases (ClickHouse, PostgreSQL, DDL)',
+            'Kubernetes',
+            'NestJS',
+            'n8n',
+            'CI/CD',
+          ],
+        },
+        {
           date: '2025.09 - 2026.02',
           title: 'Industry-Academia Collaboration Assistant | NTU Information Management × 1111 Job Bank',
           titleRole: 'Industry-Academia Collaboration Assistant',
@@ -483,6 +505,28 @@ export const messages = {
       eyebrow: '實務經驗',
       title: '工作紀錄',
       items: [
+        {
+          date: '2026.07.08 - 2026.08.28',
+          title: '基礎架構通訊服務部暑期實習生｜台灣積體電路製造股份有限公司（TSMC）',
+          titleRole: '基礎架構通訊服務部暑期實習生',
+          titleAffiliation: '台灣積體電路製造股份有限公司（TSMC）',
+          description:
+            '協助建置台積電內部 Infrastructure Data-Centric Platform，讓使用者能透過 AI Chatbot 查詢所需的基礎架構資訊，包含防火牆資訊、EOS、資產生命週期資料與相關基礎架構紀錄。實習期間參與每週需求對齊與問題定義，依 SDD 方法進行軟體開發，並實作 Kubernetes 雲原生部署、NestJS 後端服務、n8n 工作流程自動化，以及 CI/CD 測試環境驗證。',
+          detail:
+            '協助建置台積電內部 Infrastructure Data-Centric Platform，讓使用者能透過 AI Chatbot 查詢所需的基礎架構資訊，包含防火牆資訊、EOS、資產生命週期資料與相關基礎架構紀錄。實習期間參與每週需求對齊與問題定義，依 SDD 方法進行軟體開發，並實作 Kubernetes 雲原生部署、NestJS 後端服務、n8n 工作流程自動化，以及 CI/CD 測試環境驗證。',
+          tags: [
+            '問題定義',
+            'SDD',
+            '雲原生',
+            '系統開發',
+            '雲端部署',
+            '資料庫（ClickHouse、PostgreSQL、DDL）',
+            'Kubernetes',
+            'NestJS',
+            'n8n',
+            'CI/CD',
+          ],
+        },
         {
           date: '2025.09 - 2026.02',
           title: '產學合作助理｜台灣大學資訊管理研究所 Ｘ 1111人力銀行',
