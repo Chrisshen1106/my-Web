@@ -94,7 +94,7 @@ export const messages = {
       title: 'Work Experience',
       items: [
         {
-          date: '2026.07.08 - 2026.08.28',
+          date: '2026.07. - 2026.08',
           title: 'Infrastructure Communication Service Division Summer Intern | Taiwan Semiconductor Manufacturing Company Limited (TSMC)',
           titleRole: 'Infrastructure Communication Service Division Summer Intern',
           titleAffiliation: 'Taiwan Semiconductor Manufacturing Company Limited (TSMC)',
@@ -506,7 +506,7 @@ export const messages = {
       title: '工作紀錄',
       items: [
         {
-          date: '2026.07.08 - 2026.08.28',
+          date: '2026.07. - 2026.08',
           title: '基礎架構通訊服務部暑期實習生｜台灣積體電路製造股份有限公司（TSMC）',
           titleRole: '基礎架構通訊服務部暑期實習生',
           titleAffiliation: '台灣積體電路製造股份有限公司（TSMC）',
