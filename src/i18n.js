@@ -94,6 +94,17 @@ export const messages = {
       title: 'Work Experience',
       items: [
         {
+          date: '2026.09.01 - 2027.01.31',
+          title: 'Statistical Learning & Deep Learning Teaching Assistant | National Taiwan University',
+          titleRole: 'Statistical Learning & Deep Learning Teaching Assistant',
+          titleAffiliation: 'National Taiwan University',
+          description:
+            'Supported course teaching for statistical learning and deep learning, including preparing and explaining course materials, designing assignments, grading homework, and answering student questions. Course topics included neural networks, CNNs, RNNs, linear regression, and other deep learning fundamentals.',
+          detail:
+            'Supported course teaching for statistical learning and deep learning, including preparing and explaining course materials, designing assignments, grading homework, and answering student questions. Course topics included neural networks, CNNs, RNNs, linear regression, and other deep learning fundamentals.',
+          tags: ['Teaching', 'Assignment Design', 'Homework Grading', 'Student Support', 'Neural Networks', 'CNN', 'RNN', 'Linear Regression'],
+        },
+        {
           date: '2026.07. - 2026.08',
           title: 'Infrastructure Communication Service Division Summer Intern | Taiwan Semiconductor Manufacturing Company Limited (TSMC)',
           titleRole: 'Infrastructure Communication Service Division Summer Intern',
@@ -505,6 +516,17 @@ export const messages = {
       eyebrow: '實務經驗',
       title: '工作紀錄',
       items: [
+        {
+          date: '2026.09.01 - 2027.01.31',
+          title: '統計學習與深度學習助教｜台灣大學',
+          titleRole: '統計學習與深度學習助教',
+          titleAffiliation: '台灣大學',
+          description:
+            '協助統計學習與深度學習課程教學，工作內容包含課程講解、作業設計、作業批改，以及回答學生在課堂與作業中遇到的問題。課程主題涵蓋神經網路、CNN、RNN、線性迴歸與深度學習基礎等內容。',
+          detail:
+            '協助統計學習與深度學習課程教學，工作內容包含課程講解、作業設計、作業批改，以及回答學生在課堂與作業中遇到的問題。課程主題涵蓋神經網路、CNN、RNN、線性迴歸與深度學習基礎等內容。',
+          tags: ['教學', '作業設計', '作業批改', '學生問題回覆', '神經網路', 'CNN', 'RNN', '線性迴歸'],
+        },
         {
           date: '2026.07. - 2026.08',
           title: '基礎架構通訊服務部暑期實習生｜台灣積體電路製造股份有限公司（TSMC）',
